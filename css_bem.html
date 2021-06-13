@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+    <style>
+        .body {
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .Card {
+            height: 600px;
+            width: 350px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            left: 30%;
+            margin: 20px;
+
+        }
+
+        .Card__header {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .Card__header__img {
+            width: 330px;
+            height: 180px;
+
+            padding-top: 25px;
+        }
+
+        .Card__header__title {
+            font-weight: 800;
+
+            padding-left: 110px;
+            padding-top: 30px;
+        }
+
+        .Card__body {
+            font-style: italic;
+            padding: 30px;
+            opacity: 0.5;
+        }
+
+        .Card__footer__button {
+            border-radius: 50q;
+            padding: 10px;
+        }
+
+        .Card__footer__button--green {
+            border: 1px solid white;
+            background-color: rgb(40, 226, 40);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* CSS 4 the second card */
+
+
+
+        .Card2__footer__button--red {
+            border: 1px solid white;
+            background-color: rgb(204, 15, 15);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <div class="container">
+        <!-- First card -->
+        <div class="Card">
+            <div class="Card__header">
+                <img class="Card__header__img"
+                    src="https://bookdown.org/gmli64/do_a_data_science_project_in_10_days/images/tree.PNG" alt="Tree">
+
+                <span class="Card__header__title">
+                    This is the title
+                </span>
+            </div>
+
+            <div class="Card__body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore perspiciatis harum corrupti?
+                Consectetur nemo debitis placeat vitae cupiditate error eveniet ut architecto reprehenderit libero
+                labore commodi tempore quae dolorem consequatur numquam saepe atque earum, soluta eaque dolore! Ipsa
+                repellendus ratione officia, sapiente, vitae accusamus quasi sint dolor cupiditate quidem magni?
+            </div>
+
+            <div class="Card__footer">
+
+                <button class="Card__footer__button Card__footer__button--green">
+                    Press here :)
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Second card -->
+        <div class="Card">
+            <div class="Card__header">
+                <img class="Card__header__img"
+                    src="https://bookdown.org/gmli64/do_a_data_science_project_in_10_days/images/tree.PNG" alt="Tree">
+
+                <span class="Card__header__title">
+                    This is the title
+                </span>
+            </div>
+
+            <div class="Card__body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore perspiciatis harum corrupti?
+                Consectetur nemo debitis placeat vitae cupiditate error eveniet ut architecto reprehenderit libero
+                labore commodi tempore quae dolorem consequatur numquam saepe atque earum, soluta eaque dolore! Ipsa
+                repellendus ratione officia, sapiente, vitae accusamus quasi sint dolor cupiditate quidem magni?
+            </div>
+
+            <div class="Card__footer">
+
+                <button class="Card__footer__button Card__footer__button--green">
+                    Press here :)
+                </button>
+
+                <button class="Card__footer__button Card2__footer__button--red">Don't press :(</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
