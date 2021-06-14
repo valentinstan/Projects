@@ -1,0 +1,257 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>Membership Card</title>
+
+    <style>
+        .Card {
+            position: relative;
+            width: 296px;
+            height: 576px;
+            left: 45%;
+            top: 150px;
+
+            overflow: hidden;
+            background: #00583D;
+            box-shadow: 0px 1px 0px rgba(239, 232, 229, 0.25);
+            border-radius: 12px;
+
+        }
+
+        .Card__header__fig--227 {
+            width: 116.59px;
+            height: 116.59px;
+            position: absolute;
+            left: 72.88px;
+            top: -94.7px;
+
+            border-radius: 50%;
+            background-color: #c6d4c3;
+        }
+
+        .Card__header__fig--224 {
+            width: 116.59px;
+            height: 116.59px;
+            position: absolute;
+            left: 188.4px;
+            top: -94.7px;
+            z-index: 1;
+
+            border-radius: 50%;
+            background-color: rgba(0, 88, 60, 1);
+        }
+
+        .Card__header__fig--1140 {
+            width: 116.59px;
+            height: 116.59px;
+            position: absolute;
+            left: 248.3px;
+            bottom: 495.82px;
+
+            background-color: rgba(38, 112, 89, 1);
+        }
+
+        .Card__header__fig--228 {
+            width: 58.295px;
+            height: 116.59px;
+            position: absolute;
+            right: 107.41px;
+            bottom: 436.4px;
+
+            background-color: rgba(38, 112, 89, 1);
+            border-radius: 0q 100q 100q 0q;
+        }
+
+        .Card__header__fig--222 {
+            width: 116.59px;
+            height: 116.59px;
+            position: absolute;
+            left: 189px;
+            bottom: 436.4px;
+
+            background-color: rgba(38, 112, 89, 1);
+            border-radius: 50%;
+        }
+
+        .Card__header__title {
+            position: absolute;
+            left: 10.81%;
+            right: 7.09%;
+            top: 22.22%;
+            bottom: 68.06%;
+
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 56px;
+            color: #FFFFFF;
+        }
+
+        .Card__header__counter {
+            position: absolute;
+            width: 123px;
+            height: 24px;
+            left: 32px;
+            top: 184px;
+
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 24px;
+            color: #8AB2AA;
+        }
+
+        .Card__description {
+            position: absolute;
+            width: 236px;
+            height: 72px;
+            left: 32px;
+            top: 252px;
+
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+
+        .Card__price__nbr {
+            position: absolute;
+            width: 61px;
+            height: 72px;
+            left: 32px;
+            top: 348px;
+
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 72px;
+            color: #FFFFFF;
+        }
+
+        .Card__price__txt {
+            position: absolute;
+            width: 135px;
+            height: 36px;
+            left: 101px;
+            top: 373px;
+
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+        }
+
+        .Card__price__eq {
+            position: absolute;
+            width: 193px;
+            height: 24px;
+            left: 32px;
+            top: 412px;
+
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 24px;
+            text-align: center;
+            color: #8AB2AA;
+        }
+
+        .Card__footer__button {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .Card__footer__button--top {
+            position: absolute;
+            left: 40px;
+            bottom: 65px;
+            width: 220px;
+            padding: 14px;
+
+            border-radius: 50px;
+            font-size: 16px;
+            border: 1px solid rgb(255, 255, 255);
+            background: #00583D;
+            color: #FFFFFF;
+        }
+
+        .Card__footer__button--bottom:hover {
+            background: #ffffff4b;
+        }
+
+        .Card__footer__button--top:hover {
+            background: #ffffff4b;
+        }
+
+        .Card__footer__button--bottom {
+            position: absolute;
+            left: 40px;
+            bottom: 20px;
+            width: 220px;
+            padding: 14px;
+
+            border-radius: 50px;
+            border: none;
+            color: #FFFFFF;
+            font-size: 16px;
+            background: transparent;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="Card">
+
+        <div class="Card__header">
+            <div class="Card__header__fig--227"></div>
+            <div class="Card__header__fig--224"></div>
+            <div class="Card__header__fig--1140"></div>
+            <div class="Card__header__fig--228"></div>
+            <div class="Card__header__fig--222"></div>
+            <div class="Card__header__title">Monthly</div>
+            <div class="Card__header__counter">31 days remaining</div>
+        </div>
+
+        <div class="Card__description">Unlimited speaking practice time. Your progress depends only on your effort.
+        </div>
+
+        <div class="Card__price__nbr">29</div>
+        <div class="Card__price__txt">USD/month</div>
+        <div class="Card__price__eq">equivalent 6.69 USD / week </div>
+
+        <div class="Card__footer__button">
+            <button class="Card__footer__button--top">Current Plan</button>
+            <button class="Card__footer__button--bottom">Pause Membership</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
